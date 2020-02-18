@@ -1,0 +1,22 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="author" content="John Doe"><link rel="alternative" href="/atom.xml" title="Terence" type="application/atom+xml"><link rel="icon" href="/favicon.png"><title>[补充]创建博客+hexo和markdown添加本地图片 - Terence</title>
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="/js/fancybox/jquery.fancybox.min.css">
+<!--[if lt IE 9]><script>(function(a,b){a="abbr article aside audio bdi canvas data datalist details dialog figcaption figure footer header hgroup main mark meter nav output progress section summary template time video".split(" ");for(b=a.length-1;b>=0;b--)document.createElement(a[b])})()</script><![endif]-->
+<script src="/js/jquery-3.1.1.min.js"></script>
+
+<script src="/js/fancybox/jquery.fancybox.min.js"></script>
+<meta name="generator" content="Hexo 4.2.0"></head><body style="opacity:0"><header class="head"><h1 class="head-title u-fl"><a href="/">Terence</a></h1><nav class="head-nav u-fr"><ul class="head-nav__list"><li class="head-nav__item"><a class="head-nav__link" href="/tags">标签</a></li><li class="head-nav__item"><a class="head-nav__link" href="/archives">目录</a></li></ul></nav></header><main class="main"><article class="post"><header class="post__head"><time class="post__time" datetime="2020-02-15T22:50:33.000Z">2020 - 02 - 16 06:50:33</time><h1 class="post__title"><a href="/2020/02/16/%E8%A1%A5%E5%85%85-%E5%88%9B%E5%BB%BA%E5%8D%9A%E5%AE%A2-hexo%E5%92%8Cmarkdown%E6%B7%BB%E5%8A%A0%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87/">[补充]创建博客+hexo和markdown添加本地图片</a></h1><div class="post__main echo"><p>data:2020-02-18 15:00:00</p>
+<h1 id="GitHub-Hexo搭建个人Blog"><a href="#GitHub-Hexo搭建个人Blog" class="headerlink" title="GitHub+Hexo搭建个人Blog"></a><strong>GitHub+Hexo搭建个人Blog</strong></h1><p>今天写一下做这个个人blog的理由和所做的准备工作<br>理由：做这个blog最直接的理因是我弟，一个极度勤奋自律的人（以后再好好谈谈我弟这个人），因为他给我看了他做的blog，主要内容是他在学编程的路上，对知识、技术的总结和分享，另外还有写自己的日常、学习方法、生活感想等等。看到他的blog的第一想法是：对喔，还能这么做。我作为一个很懒散的人，懒散了这么多年，心里再想好好努力，都有点难以坚持。这就导致了我在学习上容易时断时续，知识都是看一遍就忘，很难转换成自己的东西。而写blog做总结，这无疑是一个极好的方式，能把我学了的东西再自己梳理一遍。不管写的怎么样，不管梳理的怎么样，一点一滴写下，这样总能收获些。饭得一口一口吃，慢慢来，总能好好得消化掉。而且70同学讲过，你得先让自己去多说，不断地说，慢慢地就能好好地表达自己心中所想得了，我想这个道理也能用在学习上。其次就是，日常生活中，总会有不少事不少想法产生，我又是个比较负面的人，也是个奇怪的人，总会有各种想法心事，不太适合和他人诉说。那么，在这里说一下，也算是一个倾诉的途径。特别是2019年下半年这段时间，其中发生的事是我无法方下的，希望我有一天能在这里好好地诉说一下，大概吧。</p>
+<p>目标：搭建个人Blog<br>方式：GitHub + Hexo 框架<br>准备工作A:<br>    1. GitHub<br>    2. 注册账号<br>    3. 新建一个repository，因为是做blog，这个名字必须是<strong>用户名.github.io</strong><br>    4. 下载、安装Git<br>    5. 连接Git和GitHub<br>        5.1. 获取SSH密钥<br>        5.2. 登录GitHub在settings里填入密钥<br>准备工作B：<br>    1. Node.js<br>    2. 打开<a href="https://nodejs.org/en/" target="_blank" rel="noopener" title="Node.js">https://nodejs.org/en/</a>下载并安装Node.js<br>    3. 新建文件夹Hexo，并在里面再新建一个blog文件夹<br>    4. 安装Hexo，右键点击GIT BASH HERE，输入命令：<code>npm install hexo-cli -g</code><br>    5. 安装完后输入<code>hexo init</code><br>    6. 初始化完成后输入：<code>hexo install</code><br>    7. <code>npm install hexo-deployer-git --save</code><br>    8. 运行<code>hexo g -d</code></p>
+<p>注1：blog搭建不成功可能是仓库连接的问题<br>      输入：<br>    <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;username&quot;      把引号里的username换成github用户名</span><br><span class="line">git config --global user.email &quot;email&quot;             把引号里的email换成github邮箱</span><br></pre></td></tr></table></figure></p>
+<p>2020-02-18 17：04  </p>
+<ol>
+<li>今天先写到这。如果有人意外的看到这篇东西并打算搭建一个个人blog，那么你最好关掉这个blog，去百度搜索更靠谱的教程，或者去b站搜索相关视频。该文目前仅供我个人观看，不够完善，请原谅。</li>
+<li>就写了这么点东西就花了两个钟，效率太低了，注意力太不集中了，有待提高！！</li>
+</ol>
+</div></header></article><section class="reward"><a class="btn-reward" href="#">打赏</a><div class="reward-wrapper clearfix"><img src="/img/wechat.png" title="微信"></div></section></main><footer class="foot"><div class="foot-copy">&copy; 2016 - 2020 John Doe</div></footer>
+<script src="/js/scroller.js"></script>
+
+<script src="/js/main.js"></script>
+</body></html>
